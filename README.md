@@ -1,2 +1,12 @@
 # riskthink_analysis
-Repository to house code for volume prediction analysis
+
+For this analysis, I had big plans. I wanted to process the data, complete the feature engineering process and then train multiple models using stochastic gradient descent for each in order to choose the best hyperparameters that reduced MSE and then choose the best model to predict volume from moving average and moving median. Unfortunately due to time and computer constraints, I have not been able to fully complete what I set out to. 
+
+The models I wanted to test were the Random Forest outlined in the initial project, a Bayesian Linear Regression, Conditional Inference Trees, as well as a Support Vector Regression. I chose to test a BLR due to the ability of the model to update given new information as well as test a bayesian statistical model compared to the other more classical ones. Conditonal Inference Trees were chosen as I have used the method in the past and it grows decision trees based on a variables statistical significance rather than a pre-determined splitting criteria. Support Vector Regression was chosen as a possible model run because I have been learning about this type of model, mainly for classificaion tasks (ex. assigning avalanche danger ratings) and wanted to test it to see how well it performed comparitavely. 
+
+Unfortunately, due to computing constraints on my computer, I was unable to complete many of the tasks above. In the end, I ended up with one Random Forest model trained on 1/2 of the dataset due to the same computing constraints. I am currently working on using AWS to run the initial implementation (train each model, find best hyperparameters then choose best model), but am still working on it. 
+
+The API process in Q4 has been a struggle due to computing constraints. My machine runs out of memory and kills the API before the API runs. Similarly to the above, I am working on running the API using AWS but have not been able to make it run as of yet. API development is completely new to me and I have not coded API's in the past. I have been teaching myself during this process using ChatGPT and StackOverflow to understand what is going on, and how to work through bugs. The chat log is extensive for this question and I can provide it if you'd like.
+
+This process has been an incredible learning opportunity to dive into another pipeline and using all available resources has been awesome. It has given me insights into better understanding AWS, API development, the powers of ChatGPT and further ignited my curiosity. 
+
